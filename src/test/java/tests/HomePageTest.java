@@ -41,6 +41,7 @@ public class HomePageTest extends BaseCl {
 		        driver.get("https://www.saucedemo.com/inventory.html");
 		    }
 		homepage.addItemWithMaxPriceToCart();
+		
 	}
 
 }

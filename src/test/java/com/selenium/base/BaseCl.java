@@ -24,7 +24,7 @@ public class BaseCl {
 		driver.manage().window().maximize();
 	}
 	
-//	@AfterClass
+	@AfterClass
 	public void teardown() {
 		driver.close();
 		driver.quit();
