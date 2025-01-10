@@ -14,8 +14,10 @@ public class HomePageTest extends BaseCl {
 
 	public void loginWithEmailAndPassword() {
 		LoginPage loginpage = new LoginPage(driver);
-		String email = System.getenv("sauceLabsEmail");
-		String password = System.getenv("sauceLabsPassword");
+//		String email = System.getenv("sauceLabsEmail");
+//		String password = System.getenv("sauceLabsPassword");
+		String email = "standard_user";
+		String password = "secret_sauce";
 
 
 		loginpage.visitLoginPage();
