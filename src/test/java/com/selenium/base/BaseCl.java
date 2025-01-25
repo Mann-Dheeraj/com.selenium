@@ -16,14 +16,14 @@ public class BaseCl {
     public void initializeBrowser() {
         WebDriverManager.chromedriver().setup();
         
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless"); // Run in headless mode
-//        options.addArguments("--disable-gpu"); // Disable GPU rendering
-//        options.addArguments("--no-sandbox"); // Required for root privileges
-//        options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless"); // Run in headless mode
+        options.addArguments("--disable-gpu"); // Disable GPU rendering
+        options.addArguments("--no-sandbox"); // Required for root privileges
+        options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
         
-//        driver = new ChromeDriver(options); // Pass ChromeOptions to the driver
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options); // Pass ChromeOptions to the driver
+//        driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
     
