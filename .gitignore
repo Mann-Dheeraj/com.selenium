@@ -1,0 +1,29 @@
+# Ignore target folder (compiled files and artifacts)
+target/
+
+# IDE files
+.idea/
+.project
+.classpath
+.vscode/
+
+# Logs
+*.log
+
+# Maven release plugin files
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+
+# Secrets (just an example, avoid committing sensitive data)
+*.key
+*.crt
+*.pem
